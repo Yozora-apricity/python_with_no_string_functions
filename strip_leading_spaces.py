@@ -10,5 +10,5 @@ def remove_leading_spaces(s):
 
 #Ask the user to enter a string and print the Original and Without Front Space string.
 string = input("Enter a string: ")
-print(f"Original: '{string}'")
-print(f"Without Front Space: '{remove_leading_spaces(string)}'")
+print(f"Original:{string}")
+print(f"Without Front Space:{remove_leading_spaces(string)}")
