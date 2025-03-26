@@ -10,5 +10,6 @@ def my_capitalize(s):
     rest_of_string = s[1:]
     return first_char.upper() + rest_of_string.lower()
 
+# Test the function and print the output
 s = input("Enter a detailed string: ")
 print(f'Ouput: {my_capitalize(s)}')
