@@ -6,8 +6,8 @@
 def to_uppercase(s):
     result = ""
     for char in s:
-        if 'a' <= char <= 'z':
-            result += chr(ord(char) + 32)
+        if 'a' <= char <= 'z': # Check if the character is lowercase
+            result += chr(ord(char) - 32) # Convert to uppercase by subtracting 32 from ASCII value
         else:
             result += char
     return result
