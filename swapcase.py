@@ -9,3 +9,18 @@
 # 4. Return the modified string.
 # 5. Take user input and call the function to swap case.
 # 6. Print the result.
+
+def manual_swapcase(s):
+    result = ""
+    for char in s:
+        if 'a' <= char <= 'z':  # If lowercase, convert to uppercase
+            result += chr(ord(char) - 32)
+        elif 'A' <= char <= 'Z':  # If uppercase, convert to lowercase
+            result += chr(ord(char) + 32)
+        else:
+            result += char  # Keep non-alphabetic characters unchanged
+    return result
+
+#Ask the user for input
+input_str = input("Enter a string: ")
+print("Swapped case string:", manual_swapcase(input_str))
