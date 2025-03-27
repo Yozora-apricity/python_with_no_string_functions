@@ -3,9 +3,9 @@
 # 2. If string length is >= width, print string directly
 # 3. Else:
 #    a. Calculate total padding: width - length of string
-#    b. Split padding into left (half of total) and right (remaining)
-#    c. Create new string: left spaces + original string + right spaces
-# 4. Print the resulting centered string
+#    b. Split padding into left_padding (half of total) and right_padding (remaining)
+#    c. Create new string: left_padding spaces + original string + right_padding spaces
+# 4. Print the resulting centered_padding string
 
 # Read the input string and desired width from the user
 sentence = input("Enter the string: ")
@@ -15,10 +15,10 @@ width = int(input("Enter the width: "))
 if len(sentence) >= width:
     print(sentence)
 else:
-    # Calculate total padding and split into left and right
+    # Calculate total padding and split into left_padding and right_padding
     total_padding = width - len(sentence)
-    left = total_padding // 2
-    right = total_padding - left
-    # Construct the centered string
-    centered = ' ' * left + sentence + ' ' * right
-    print(centered)
+    left_padding = total_padding // 2
+    right_padding = total_padding - left_padding
+    # Construct the centered_padding string
+    centered_padding = ' ' * left_padding + sentence + ' ' * right_padding
+    print(centered_padding)
